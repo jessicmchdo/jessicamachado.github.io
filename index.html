@@ -1,11 +1,635 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-    <title>Minha Primeira Página</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Jéssica Machado | Portfólio</title>
+
+    <meta
+        name="description"
+        content="Portfólio de Jéssica Machado, estudante de Ciência da Computação com interesse em Engenharia de Dados."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        creme: "#F5F1E8",
+                        areia: "#DED2BE",
+                        terracota: "#B56E4A",
+                        oliva: "#707552",
+                        floresta: "#344E41",
+                        musgo: "#53654C",
+                        cafe: "#493D35"
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
-<body>
-    <h1>Olá, mundo!</h1>
-    <p>Meu nome é Jéssica</p>
-    <p>Este é meu primeiro site 🎉</p>
+
+
+<body class="bg-creme text-cafe">
+
+    <!-- MENU -->
+
+    <header class="menu">
+
+        <nav class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+
+            <a
+                href="#inicio"
+                id="logo"
+            >
+                JM.
+            </a>
+
+            <ul class="hidden md:flex gap-8 text-sm font-medium">
+
+                <li>
+                    <a href="#sobre">
+                        Sobre
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#experiencia">
+                        Experiência
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#formacao">
+                        Formação
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#tecnologias">
+                        Tecnologias
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projetos">
+                        Projetos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contato">
+                        Contato
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- INÍCIO -->
+
+        <section
+            id="inicio"
+            class="min-h-[90vh] flex items-center"
+        >
+
+            <div
+                class="
+                    max-w-6xl
+                    mx-auto
+                    px-6
+                    py-20
+                    grid
+                    md:grid-cols-2
+                    gap-16
+                    items-center
+                "
+            >
+
+                <div>
+
+                    <p class="destaque">
+                        CIÊNCIA DA COMPUTAÇÃO · ENGENHARIA DE DADOS
+                    </p>
+
+                    <h1
+                        class="
+                            text-5xl
+                            md:text-7xl
+                            font-bold
+                            leading-tight
+                            text-floresta
+                            mb-7
+                        "
+                    >
+                        Olá, eu sou
+                        <span class="text-terracota">
+                            Jéssica Machado.
+                        </span>
+                    </h1>
+
+                    <p
+                        class="
+                            text-lg
+                            md:text-xl
+                            leading-relaxed
+                            text-cafe/80
+                            max-w-xl
+                            mb-9
+                        "
+                    >
+                        Estudante de Ciência da Computação,
+                        interessada em Engenharia de Dados,
+                        desenvolvimento de software e construção
+                        de soluções orientadas a dados.
+                    </p>
+
+
+                    <div class="flex flex-wrap gap-4">
+
+                        <a
+                            href="#projetos"
+                            class="
+                                bg-floresta
+                                text-creme
+                                px-7
+                                py-3
+                                rounded-full
+                                font-semibold
+                                hover:bg-musgo
+                                hover:-translate-y-1
+                                transition
+                            "
+                        >
+                            Ver projetos
+                        </a>
+
+                        <a
+                            href="#contato"
+                            class="
+                                border-2
+                                border-floresta
+                                text-floresta
+                                px-7
+                                py-3
+                                rounded-full
+                                font-semibold
+                                hover:bg-floresta
+                                hover:text-creme
+                                transition
+                            "
+                        >
+                            Contato
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOTO -->
+
+                <div class="flex justify-center">
+
+                    <div class="foto-container">
+
+                        <div class="forma-terra"></div>
+
+                        <div class="forma-verde"></div>
+
+                        <img
+                            class="foto"
+                            src="https://github.com/jessicmchdo.png"
+                            alt="Foto de Jéssica Machado"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SOBRE -->
+
+        <section
+            id="sobre"
+            class="bg-floresta text-creme"
+        >
+
+            <div class="max-w-5xl mx-auto px-6 py-24">
+
+                <p class="titulo-pequeno">
+                    UM POUCO SOBRE MIM
+                </p>
+
+                <h2 class="titulo-secao claro">
+                    Sobre mim
+                </h2>
+
+
+                <div
+                    class="
+                        grid
+                        md:grid-cols-2
+                        gap-12
+                        text-creme/80
+                        leading-relaxed
+                    "
+                >
+
+                    <p>
+                        Sou estudante de Ciência da Computação
+                        na Universidade Federal de Ouro Preto.
+                        Durante minha formação, venho desenvolvendo
+                        experiência com programação, bancos de dados,
+                        desenvolvimento web e processamento de dados.
+                    </p>
+
+                    <p>
+                        Tenho interesse especial em Engenharia de Dados
+                        e Ciência de Dados. Gosto de trabalhar com
+                        problemas que envolvem organização, transformação
+                        e análise de informações.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- EXPERIÊNCIA -->
+
+        <section id="experiencia">
+
+            <div class="max-w-6xl mx-auto px-6 py-24">
+
+                <p class="destaque">
+                    MINHA TRAJETÓRIA PROFISSIONAL
+                </p>
+
+                <h2 class="titulo-secao">
+                    Experiência
+                </h2>
+
+
+                <div class="timeline">
+
+                    <article class="experiencia">
+
+                        <span class="bolinha"></span>
+
+                        <p class="periodo">
+                            Tecnologia · Dados
+                        </p>
+
+                        <h3>
+                            Estágio em Tecnologia
+                        </h3>
+
+                        <p>
+                            Atuação no desenvolvimento e manutenção
+                            de processos de dados, incluindo ETL,
+                            processamento distribuído, consultas,
+                            validações e integração de diferentes
+                            fontes de informação.
+                        </p>
+
+                    </article>
+
+
+                    <article class="experiencia">
+
+                        <span class="bolinha"></span>
+
+                        <p class="periodo">
+                            2022 — 2024
+                        </p>
+
+                        <h3>
+                            Empresa Júnior
+                        </h3>
+
+                        <p>
+                            Participação em atividades relacionadas
+                            ao desenvolvimento profissional,
+                            trabalho em equipe e projetos.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FORMAÇÃO -->
+
+        <section
+            id="formacao"
+            class="bg-areia"
+        >
+
+            <div class="max-w-6xl mx-auto px-6 py-24">
+
+                <p class="titulo-pequeno escuro">
+                    FORMAÇÃO ACADÊMICA
+                </p>
+
+                <h2 class="titulo-secao">
+                    Educação
+                </h2>
+
+
+                <div class="grid md:grid-cols-2 gap-6">
+
+
+                    <article class="card-formacao">
+
+                        <p class="tipo-formacao">
+                            Graduação
+                        </p>
+
+                        <h3>
+                            Ciência da Computação
+                        </h3>
+
+                        <p>
+                            Universidade Federal de Ouro Preto — UFOP
+                        </p>
+
+                        <span>
+                            2022 — 2026
+                        </span>
+
+                    </article>
+
+
+                    <article class="card-formacao">
+
+                        <p class="tipo-formacao">
+                            Formação técnica
+                        </p>
+
+                        <h3>
+                            Técnico em Informática
+                        </h3>
+
+                        <p>
+                            Instituto Federal do Sul de Minas Gerais
+                        </p>
+
+                        <span>
+                            2018 — 2020
+                        </span>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- TECNOLOGIAS -->
+
+        <section id="tecnologias">
+
+            <div class="max-w-6xl mx-auto px-6 py-24">
+
+                <p class="destaque">
+                    FERRAMENTAS E CONHECIMENTOS
+                </p>
+
+                <h2 class="titulo-secao">
+                    Tecnologias
+                </h2>
+
+
+                <div class="tecnologias">
+
+                    <span>Python</span>
+                    <span>PySpark</span>
+                    <span>SQL</span>
+                    <span>PostgreSQL</span>
+                    <span>AWS</span>
+                    <span>Apache NiFi</span>
+                    <span>Git</span>
+                    <span>Docker</span>
+                    <span>Django</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Tailwind CSS</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PROJETOS -->
+
+        <section
+            id="projetos"
+            class="bg-areia"
+        >
+
+            <div class="max-w-6xl mx-auto px-6 py-24">
+
+                <p class="titulo-pequeno escuro">
+                    ALGUNS DOS MEUS TRABALHOS
+                </p>
+
+                <h2 class="titulo-secao">
+                    Projetos
+                </h2>
+
+
+                <div class="grid md:grid-cols-2 gap-8">
+
+
+                    <article class="projeto">
+
+                        <div class="projeto-imagem verde">
+                            🧠
+                        </div>
+
+                        <div class="projeto-conteudo">
+
+                            <p class="categoria">
+                                Trabalho de Conclusão de Curso
+                            </p>
+
+                            <h3>
+                                Modelo de usuário para aprendizagem adaptativa
+                            </h3>
+
+                            <p>
+                                Estratégia de geração e atualização de
+                                modelos de usuários aplicada à plataforma
+                                gamificada TôSabendo.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="projeto">
+
+                        <div class="projeto-imagem terra">
+                            💻
+                        </div>
+
+                        <div class="projeto-conteudo">
+
+                            <p class="categoria">
+                                Projeto de extensão
+                            </p>
+
+                            <h3>
+                                opCoders
+                            </h3>
+
+                            <p>
+                                Projeto de extensão voltado para
+                                atividades relacionadas à programação
+                                em escolas de Ouro Preto.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CONTATO -->
+
+        <section
+            id="contato"
+            class="bg-floresta text-creme"
+        >
+
+            <div
+                class="
+                    max-w-5xl
+                    mx-auto
+                    px-6
+                    py-24
+                    text-center
+                "
+            >
+
+                <p class="titulo-pequeno">
+                    CONTATO
+                </p>
+
+                <h2
+                    class="
+                        text-4xl
+                        md:text-6xl
+                        font-bold
+                        mb-7
+                    "
+                >
+                    Vamos conversar?
+                </h2>
+
+                <p
+                    class="
+                        text-creme/70
+                        text-lg
+                        max-w-xl
+                        mx-auto
+                        mb-10
+                    "
+                >
+                    Estou aberta a conversar sobre tecnologia,
+                    desenvolvimento, dados, projetos e oportunidades.
+                </p>
+
+
+                <div
+                    class="
+                        flex
+                        flex-wrap
+                        justify-center
+                        gap-5
+                    "
+                >
+
+                    <a
+                        class="botao-contato"
+                        href="https://github.com/jessicmchdo"
+                        target="_blank"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        class="botao-contato"
+                        href="https://www.linkedin.com/in/jessicmchdo/"
+                        target="_blank"
+                    >
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+        © 2026 Jéssica Machado
+    </footer>
+
+
 </body>
+
 </html>
